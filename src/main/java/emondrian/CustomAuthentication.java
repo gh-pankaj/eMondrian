@@ -1,3 +1,9 @@
+import org.w3c.dom.Element;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+import mondrian.xmla.impl.AuthenticatingXmlaRequestCallback;
+import mondrian.xmla.XmlaConstants;
+
 public class CustomAuthentication extends AuthenticatingXmlaRequestCallback {
  
 public void preAction(HttpServletRequest request, Element[] requestSoapParts, Map<String, Object> context)
