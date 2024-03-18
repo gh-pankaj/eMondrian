@@ -3,6 +3,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 import mondrian.xmla.impl.AuthenticatingXmlaRequestCallback;
 import mondrian.xmla.XmlaConstants;
+import org.apache.commons.codec.binary.Base64;
+
 
 public class CustomAuthentication extends AuthenticatingXmlaRequestCallback {
  
