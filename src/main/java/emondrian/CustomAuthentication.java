@@ -4,6 +4,7 @@ import java.util.Map;
 import mondrian.xmla.impl.AuthenticatingXmlaRequestCallback;
 import mondrian.xmla.XmlaConstants;
 import java.util.Base64;
+import java.nio.charset.StandardCharsets;
 
 
 public class CustomAuthentication extends AuthenticatingXmlaRequestCallback {
