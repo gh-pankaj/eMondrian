@@ -12,7 +12,8 @@ public void preAction(HttpServletRequest request, Element[] requestSoapParts, Ma
             throws Exception {
         String authHeader = request.getHeader("authorization");
         String encodedValue = authHeader.split(" ")[1];
-        String decodedValue = Base64.base64Decode(encodedValue);
+        String decodedValue = new String(Base64.getDecoder().decode(encodedValue), StandardCharsets.UTF_8);
+
         int k = decodedValue.indexOf(":");
         if (k > 0) {
             String user = decodedValue.substring(0, k);
