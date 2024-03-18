@@ -56,6 +56,7 @@
     <dependency>
       <groupId>org.roaringbitmap</groupId>
       <artifactId>RoaringBitmap</artifactId>
+      <version>0.9.9</version>
       <scope>provided</scope>
     </dependency>
 
